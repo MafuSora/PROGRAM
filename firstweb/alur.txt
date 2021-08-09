@@ -1,0 +1,50 @@
+cmd
+install django
+bikin app py  python -m django startproject [nama web ]
+py manage.py runserver port
+cek dengan py -m django --version
+
+
+views
+
+#1
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+
+
+def landing_page(request):
+    return HttpResponse("Hello,World")
+
+urls app
+
+#2 bikin file urls.py 
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.land
+
+#3
+from django.contrib import admin
+from django.urls import path
+from django.urls.conf import include
+
+urls  di firstweb
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('mainweb.urls'))
+]
+
+sttings
+# Application definition
+#4
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'firstweb','mainweb'
+]

@@ -25,3 +25,7 @@ def sapa(request, nama):
 
 def htmlcoba(request):
     return render(request, "examples.html")
+
+
+def funcbaru(request):
+    return HttpResponse("papa")

@@ -33,3 +33,35 @@ def funcbaru(request):
 
 def mainpage(request):
     return render(request, index.html)
+
+
+def newpage(request):
+    return HttpResponse("new")
+
+
+def a(request):
+    return HttpResponse()
+
+
+def shop(request):
+    return render(request, 'shop.html')
+
+
+def shop_laptop(request):
+    return render(request, 'shop_laptop.html')
+
+
+def shop_console(request):
+    return render(request, 'shop_console.html')
+
+
+def shop_smartphone(request):
+    return render(request, 'shop_smartphone.html')
+
+
+def first_page(request):
+    return render(request, 'firstpage.html')
+
+
+def second_page(request):
+    return render(request, 'secondpage.html')

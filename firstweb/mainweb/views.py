@@ -29,3 +29,7 @@ def htmlcoba(request):
 
 def funcbaru(request):
     return HttpResponse("papa")
+
+
+def mainpage(request):
+    return render(request, index.html)

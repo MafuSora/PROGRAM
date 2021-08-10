@@ -14,4 +14,5 @@ urlpatterns = [
     path('htmlcoba/', views.htmlcoba),
     path('second/', views.second_page),
     path('', views.landing_page),
+    path('mafualbum1/', views.mafualbum1_page),
 ]

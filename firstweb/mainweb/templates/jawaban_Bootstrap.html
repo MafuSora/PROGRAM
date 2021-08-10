@@ -4,32 +4,88 @@
         <meta charset="utf-8">
         <title> 	ĦɆꝀɆŁ ⱣɇꝀȺŁØNǥȺn ȻħɇȺŦɇɍ </title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/scss/_variables.scss" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/scss/_variables.scss" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     </head>
-    <div class="card m-4 bg-danger" style="">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://64.media.tumblr.com/542f8923f407cc17ec3f2ab240c8645f/tumblr_pte2qctJvc1wnyqsuo1_500.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <div class="carousel-item">
+          <img src="https://64.media.tumblr.com/542f8923f407cc17ec3f2ab240c8645f/tumblr_pte2qctJvc1wnyqsuo1_500.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://64.media.tumblr.com/542f8923f407cc17ec3f2ab240c8645f/tumblr_pte2qctJvc1wnyqsuo1_500.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="card m-4 bg-danger" >
       <div class="row  mt-2">
           <div class="col-2 m-4">
-            <img src = https://hikarinoakari.com/wp-content/uploads/nuevo/2019/10/Kagurairo-Artifact-mafumafu.jpg  class="rounded   img-fluid img-thumbnail mx-auto d-block" width = "200px" />
+            <img src = https://hikarinoakari.com/wp-content/uploads/nuevo/2019/10/Kagurairo-Artifact-mafumafu.jpg  class="rounded  transform:scale(1.2) img-fluid img-thumbnail mx-auto d-block" width = "200px" />
             <p>    </p>
-            <p class="text-light  bg-dark text-center fs-4 " >Kagurairo Artifact Album</p>
+            <p class="text-light bg-dark text-center fs-4 font-family= " >Kagurairo Artifact  Album</p>
           </div>
           <div class="col-5 ">
             <p class= "fs-3  mt-4 text-light"> 
               Album Kagurairo Artifact Mafumafu
             </p>
-            <p>
+            <div class="container bg-light rounded p-2">
+              
               Description : 
-              <ol> 
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+              <ol class="m-2"> 
+                <li href=www.facebook.com>忍びのすゝめ (Shinobi No Susume)</li>
+                <li>自壊プログラム (Jikai Program)</li>
+                <li>サクリファイス (Sacrifice)</li>
+                <li>ジグソーパズル (Jigsaw Puzzle)</li>
+                <li>マルファンクション (Malfunction)</li>
+                <li>朧月 (Oborozuki)</li>
+                <li>すーぱーぬこになれんかった (Super Nuko ni Narenkatta)</li>
+                <li>女の子になりたい (Onnanoko ni Naritai)</li>
+                <li>動かざること山の如し (Ugokazarukoto Yama No Gotoshi)</li>
+                <li>君のくれたアステリズム (Kimi No Kureta Asterism)</li>
+                <li>リライトザサーガ (Rewrite the Saga) </li>
+                <li>曼珠沙華 (Manjushage)</li>
+                <li>とおせんぼう (Toosenbou)  </li>
+                <li> 傀儡の心臓 (Kugutsu No Shinzou)</li>
+                <li>廃墟の国のアリス (Haikyo no Kuni no Alice)</li>
+                <li>生まれた意味などなかった。 (Umareta Imi Nado Nakatta.) </li>
+                <li>アートを科学する (Art Wo Kagaku Suru)</li>
+                <li>それは恋の終わり (Sore Wa Koi No Owari)</li>
+                <li>拝啓、桜舞い散るこの日に (Haikei Sakura Maichiru Kono Hini)</li>
+                <li>あさきゆめみし (Asakiyumemishi)</li>
+                                
               </ol>
-            </p>
+            </div>
               One of three columns
           </div>
           <div class="col-4">
@@ -37,5 +93,43 @@
           </div>
       </div>
     </div>
-  
+
+    <div class= "card p-4 m-4 bg-dark rounded">
+      <p class= "fs-3   text-light"> 
+        DISCOGRAPHY
+      </p>
+      <div class=row>
+        <div class= col-3>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/162148543&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mafuterufandos" title="Mafumafu Fan 2" target="_blank" style="color: #cccccc; text-decoration: none;">Mafumafu Fan 2</a> · <a href="https://soundcloud.com/mafuterufandos/sets/prerhythm-arch-summer-comiket-2015-sorairo-muffler" title="Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler" target="_blank" style="color: #cccccc; text-decoration: none;">Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler</a></div>
+        </div>
+        <div class= col-3>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/162148543&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mafuterufandos" title="Mafumafu Fan 2" target="_blank" style="color: #cccccc; text-decoration: none;">Mafumafu Fan 2</a> · <a href="https://soundcloud.com/mafuterufandos/sets/prerhythm-arch-summer-comiket-2015-sorairo-muffler" title="Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler" target="_blank" style="color: #cccccc; text-decoration: none;">Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler</a></div>
+        </div>
+        <div class= col-3>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/162148543&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mafuterufandos" title="Mafumafu Fan 2" target="_blank" style="color: #cccccc; text-decoration: none;">Mafumafu Fan 2</a> · <a href="https://soundcloud.com/mafuterufandos/sets/prerhythm-arch-summer-comiket-2015-sorairo-muffler" title="Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler" target="_blank" style="color: #cccccc; text-decoration: none;">Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler</a></div>
+        </div>
+        <div class= col-3>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/162148543&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mafuterufandos" title="Mafumafu Fan 2" target="_blank" style="color: #cccccc; text-decoration: none;">Mafumafu Fan 2</a> · <a href="https://soundcloud.com/mafuterufandos/sets/prerhythm-arch-summer-comiket-2015-sorairo-muffler" title="Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler" target="_blank" style="color: #cccccc; text-decoration: none;">Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler</a></div>
+        </div>
+      </div>
+    </div>
+    <div class= "card p-4 m-4 bg-dark rounded">
+      <p class= "fs-3   text-light"> 
+        DISCOGRAPHY
+      </p>
+      <div class=row>
+        <div class= col-3>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/162148543&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mafuterufandos" title="Mafumafu Fan 2" target="_blank" style="color: #cccccc; text-decoration: none;">Mafumafu Fan 2</a> · <a href="https://soundcloud.com/mafuterufandos/sets/prerhythm-arch-summer-comiket-2015-sorairo-muffler" title="Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler" target="_blank" style="color: #cccccc; text-decoration: none;">Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler</a></div>
+        </div>
+        <div class= col-3>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/162148543&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mafuterufandos" title="Mafumafu Fan 2" target="_blank" style="color: #cccccc; text-decoration: none;">Mafumafu Fan 2</a> · <a href="https://soundcloud.com/mafuterufandos/sets/prerhythm-arch-summer-comiket-2015-sorairo-muffler" title="Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler" target="_blank" style="color: #cccccc; text-decoration: none;">Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler</a></div>
+        </div>
+        <div class= col-3>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/162148543&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mafuterufandos" title="Mafumafu Fan 2" target="_blank" style="color: #cccccc; text-decoration: none;">Mafumafu Fan 2</a> · <a href="https://soundcloud.com/mafuterufandos/sets/prerhythm-arch-summer-comiket-2015-sorairo-muffler" title="Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler" target="_blank" style="color: #cccccc; text-decoration: none;">Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler</a></div>
+        </div>
+        <div class= col-3>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/162148543&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mafuterufandos" title="Mafumafu Fan 2" target="_blank" style="color: #cccccc; text-decoration: none;">Mafumafu Fan 2</a> · <a href="https://soundcloud.com/mafuterufandos/sets/prerhythm-arch-summer-comiket-2015-sorairo-muffler" title="Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler" target="_blank" style="color: #cccccc; text-decoration: none;">Prerhythm Arch - Summer Comiket 2015 - Sorairo Muffler</a></div>
+        </div>
+      </div>
+    </div>
 </html>

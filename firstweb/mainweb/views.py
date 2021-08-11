@@ -69,3 +69,7 @@ def second_page(request):
 
 def mafualbum1_page(request):
     return render(request, "jawaban_Bootstrap.html")
+
+
+def mafualbum2_page(request):
+    return render(request, "Album2.html")

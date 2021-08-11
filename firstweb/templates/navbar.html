@@ -1,28 +1,40 @@
 {% load static %}
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light opacity-80 bg-light mt-3" >
     <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-danger fs-3" href="/shop/">e-Shop</a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" style="justify-content: center;" id="navbarNav">
+            <ul class="navbar-nav text-danger">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active text-danger fw-bolder m-2" aria-current="page" href="/mafualbum1/">Album</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Smartphone</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/shop_laptop/">Laptop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/shop_console/">Console</a>
+                    <a class="nav-link text-danger fw-bolder m-2" href="/shop/laptop/">Smartphone</a>
                 </li>
             </ul>
+            <a class="navbar-brand fw-bold text-danger fs-3 fw-bolder " href="/shop/">MAFUMAFU</a>
+            <a href="/mafualbum1/"> <img src="https://sdl-stickershop.line.naver.jp/products/0/0/1/1251258/android/stickers/10190741.png"   class="rounded me-3"style="width:50px"/></a>
+            <a class="navbar-brand fw-bold text-danger fs-3 fw-bolder " href="/shop/">SHOP</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-danger fw-bolder m-2" href="/shop/laptop/">Laptop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger fw-bolder m-2" href="/shop/console/">Console</a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="social right " id="social-header" style="align-items: center;">
+            <a href="https://twitter.com/HeartCaptureCB"><i class="fa fa-twitter m-2 text-danger "></i></a>
+            <a href="https://www.youtube.com/channel/UC8mptdKENJipNdS8Ub0AcQQ"><i class="fa fa-youtube m-2 text-danger"></i></a>
+            <a href="https://discord.gg/5yJn9WMeTt"><i class="fa fa-linkedin m-2 text-danger"></i></a>
+            <a href="https://discord.gg/5yJn9WMeTt"><i class="fa fa-facebook m-2 text-danger text-center"></i></a>
+            <a href="https://discord.gg/5yJn9WMeTt"><i class="fa fa-github m-2 text-danger text-center"></i></a>
         </div>
     </div>
+    
 </nav>

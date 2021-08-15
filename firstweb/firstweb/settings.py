@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 import dj_database_url
 import django_heroku
+from corsheaders import defaults
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,11 +42,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainweb',
+    'corsheaders',
 ]
 
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
+MIDDLEWARE =  [
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -84,6 +87,22 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'e_shop',
+#         'USER': 'admin',
+#         'PASSWORD': 'admin123',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#         'OPTIONS': {
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+#         }
+#     }
+# }
+
+
 if PRODUCTION:
     DATABASES['default'] = dj_database_url.config()
 
@@ -129,6 +148,15 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 # STATICFILES_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"), ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_HEADERS = list(defaults.default_headers) + [
+    "Access-Control-Expose-Headers",
+]
+
+CORS_EXPOSE_HEADERS = ["Content-Disposition", "Access-Control-Allow-Origin"]
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

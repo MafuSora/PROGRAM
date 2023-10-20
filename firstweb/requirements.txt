@@ -8,6 +8,7 @@ colorama==0.3.9
 coverage==4.4.1
 dataclasses==0.6
 defusedxml==0.5.0
+django-cors-headers==3.13.0
 dj-database-url==0.5.0
 Django==3.2.6
 django-admin==2.0.1

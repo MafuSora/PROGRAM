@@ -11,11 +11,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-import dj_database_url
+# import dj_database_url
 #import django_heroku
-from corsheaders import defaults
-from dotenv import load_dotenv
+# from corsheaders import defaults
 import json
+from dotenv import load_dotenv
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -80,7 +80,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'firstweb.wsgi.application'
 
-
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+  'http://localhost:8000',
+)
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -166,9 +169,9 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"), ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_HEADERS = list(defaults.default_headers) + [
-    "Access-Control-Expose-Headers",
-]
+# CORS_ALLOW_HEADERS = list(defaults.default_headers) + [
+#     "Access-Control-Expose-Headers",
+# ]
 
 CORS_EXPOSE_HEADERS = ["Content-Disposition", "Access-Control-Allow-Origin"]
 

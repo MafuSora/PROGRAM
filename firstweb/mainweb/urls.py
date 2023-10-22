@@ -23,5 +23,5 @@ urlpatterns = [
     path('api/category/create/', api.create_categories),
     path('api/review/create/', api.create_review),
     path('api/dummy/', api.dummy),
-    path('/hello', views.landing_page),
+    path('hello/', views.landing_page),
 ]
